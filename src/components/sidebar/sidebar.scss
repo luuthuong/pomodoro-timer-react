@@ -1,14 +1,15 @@
 @use '../../scss/' as *;
 
 .sidebar{    
-    @apply w-1/4 overflow-hidden h-full shadow-lg shadow-gray-300 bg-gradient-to-tr from-[#67a749] to-[#7eaa47] rounded-2xl;
+    @apply  min-w-[250px] h-full overflow-hidden shadow-lg shadow-gray-300  bg-white rounded-2xl;
 
     &__container{
         @apply relative h-full w-full flex flex-col justify-center items-center ;
         .sidebar-element{
             @apply  w-full;
             .sidebar-item{
-                @apply relative transition-all relative flex justify-start items-center text-white text-base font-medium capitalize p-2  mb-3 ;
+                @apply relative transition-all relative flex justify-start items-center text-textColor text-base font-medium capitalize p-2  mb-3 hover:tracking-widest ;
+                transition:all .3s linear;
                 i{
                     @apply text-3xl mr-4;
                 }
@@ -20,24 +21,43 @@
                     z-index: 10;
                 }
                 &::before{
-                    @apply absolute w-0 h-full bg-white top-0 left-0 z-0 delay-500 ;
+                    @apply absolute w-0 h-full bg-gradient-to-tl from-[#699256] to-[#0a7718] top-0 left-0 z-0  ;
                     content:"";
-                    transition:all .2s $cubic-bezier;
+                    transition:all .3s $cubic-bezier;
                 }
                 &.active{
-                    @apply text-third tracking-widest;
+                    @apply text-white tracking-widest;
                     &::before{
-                        @apply w-full shadow-sm shadow-white;
+                        @apply delay-75 w-full shadow-sm shadow-white;
 
                     }
                 }
             }
         }
+        
         .sidebar-user{
-            @apply absolute flex flex-col items-center text-center top-0 left-0 w-full font-semibold bg-white overflow-hidden p-3;
+            @apply absolute flex flex-col items-center text-center top-0 left-0 w-full font-semibold bg-gradient-to-tl from-[#699256] to-[#0a7718] overflow-hidden text-white text-lg p-3;
             img{
-                @apply mb-2 left-1/2 w-20 h-20 rounded-full object-cover ;
+                @apply mb-2 shadow-sm shadow-primary cursor-pointer  left-1/2 w-20 h-20 rounded-full object-cover ;
             }
-        }   
+        }  
+        .sidebar-poster{
+            @apply absolute h-36 bottom-0 left-0;
+            img{
+                @apply relative ;
+               
+            } 
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background:linear-gradient(to top, rgba(10, 10, 10, 0.836),rgba(0, 0, 0, 0.26));
+            }
+        } 
     }
 }
+// bg-gradient-to-tr from-[#67a749] to-[#7eaa47]

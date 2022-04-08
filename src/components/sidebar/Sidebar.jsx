@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom'
 const listFeatures =[
     {
         title:'pomodoro',
-        path:'pomodoro',
+        path:'/',
         icon:'bx bx-timer'
     },
     {
@@ -24,11 +24,15 @@ const listFeatures =[
         path:'/setting',
         icon:'bx bx-cog'
     },
+    {
+        title:'log out',
+        path:'/logout',
+        icon:'bx bx-log-out'
+    },
 ]
 
 
 const Sidebar = () => {
-
 
     return (
         <div className="sidebar">
@@ -50,7 +54,9 @@ const Sidebar = () => {
                         );
                     })}
                 </div>
-                <div className="sidebar-poster"></div>
+                <div className="sidebar-poster">
+                    <img src="https://images.unsplash.com/photo-1508599804355-8ce5238b44b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+                </div>
             </div>
         </div>
     );

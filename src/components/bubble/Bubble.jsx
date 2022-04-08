@@ -6,7 +6,6 @@ const Bubble = (props) => {
     return (
         <div className="bubble-wrap">
             {new Array(15).fill(0).map((item,index) => { 
-				console.log('item',item);
 				return(
 					<div key={index} className={`bubble x${index}`}></div>
 				)
