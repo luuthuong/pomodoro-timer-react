@@ -1,0 +1,43 @@
+@use '../../scss/' as *;
+
+.sidebar{    
+    @apply w-1/4 overflow-hidden h-full shadow-lg shadow-gray-300 bg-gradient-to-tr from-[#67a749] to-[#7eaa47] rounded-2xl;
+
+    &__container{
+        @apply relative h-full w-full flex flex-col justify-center items-center ;
+        .sidebar-element{
+            @apply  w-full;
+            .sidebar-item{
+                @apply relative transition-all relative flex justify-start items-center text-white text-base font-medium capitalize p-2  mb-3 ;
+                i{
+                    @apply text-3xl mr-4;
+                }
+                // &::after{
+                //     @apply absolute content-[""] w-10 h-10 rounded-full bg-white top-[-20px] right-[0];
+                // }
+                &>*{
+                    position: relative;
+                    z-index: 10;
+                }
+                &::before{
+                    @apply absolute w-0 h-full bg-white top-0 left-0 z-0 delay-500 ;
+                    content:"";
+                    transition:all .2s $cubic-bezier;
+                }
+                &.active{
+                    @apply text-third tracking-widest;
+                    &::before{
+                        @apply w-full shadow-sm shadow-white;
+
+                    }
+                }
+            }
+        }
+        .sidebar-user{
+            @apply absolute flex flex-col items-center text-center top-0 left-0 w-full font-semibold bg-white overflow-hidden p-3;
+            img{
+                @apply mb-2 left-1/2 w-20 h-20 rounded-full object-cover ;
+            }
+        }   
+    }
+}

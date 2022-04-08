@@ -1,0 +1,34 @@
+@use './scss/' as*;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mali', cursive;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--main-color);
+}
+
+@layer base{
+  h1{
+    color:red;
+  }
+  h2{
+    color:blue;
+  }
+}
+@layer components{
+ 
+}
+.App{
+  @apply flex justify-center items-center w-full h-screen
+}
+.container{
+  @apply p-8 w-3/5 h-3/4 border-1 bg-primary rounded-3xl shadow-2xl
+}
