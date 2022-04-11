@@ -5,3 +5,4 @@
 - SwiperJS
 - React-Redux
 - React-router-dom
+- Firebase
