@@ -24,7 +24,9 @@ body{
   }
 }
 @layer components{
- 
+ .neu-shadow{
+  @apply shadow-md shadow-neutral-400; 
+ }
 }
 .App{
   @apply flex justify-center items-center w-full h-screen
@@ -32,3 +34,4 @@ body{
 .container{
   @apply p-8 w-[1280px] h-3/4 border-1 bg-primary rounded-3xl shadow-2xl flex  items-center justify-between;
 }
+

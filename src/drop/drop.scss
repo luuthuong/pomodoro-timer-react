@@ -2,14 +2,14 @@
     @apply w-full h-10  p-2 border-1 border-third font-semibold rounded-xl cursor-pointer text-textColor hover:border-primary whitespace-nowrap overflow-hidden text-ellipsis break-words 
 }
 .drop-expand{
-    @apply inline-block relative translate-x-[-50%] left-[50%] mt-1 w-10/12 scale-0 bg-primary rounded-lg p-2 -translate-y-9;
+    @apply inline-block relative translate-x-[-50%] left-[50%] mt-1 w-full scale-0 bg-primary rounded-lg p-2 -translate-y-9;
     transition:transform .3s ease;
     &.active{
         @apply scale-100 translate-y-0;
     }
     .drop-content{
         .content-item{
-            @apply p-1 w-10/12 whitespace-nowrap overflow-hidden text-ellipsis break-words cursor-pointer font-medium transition-all select-none hover:text-third
+            @apply p-1 w-full whitespace-nowrap overflow-hidden text-ellipsis break-words cursor-pointer font-medium transition-all select-none hover:text-third
         }
     }
 }

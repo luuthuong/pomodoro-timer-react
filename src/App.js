@@ -18,10 +18,10 @@ function App() {
 			<BrowserRouter>
 				<div className="container">
 					<Sidebar />
-					<div className="relative ml-[20px] w-full overflow-hidden h-full container__content">
+					<div className="relative ml-[20px] w-full h-full   container__content">
 					<div className="container__break w-full h-[75%] flex items-center   ">
 						<MyRouter />
-						<div className="right h-full w-[300px] flex flex-col items-center justify-around ">
+						<div className="right h-full w-[300px] flex flex-col items-center justify-between ">
 							<MyCard title="Task" placeholder="Choose task">
 
 							</MyCard>
@@ -30,7 +30,7 @@ function App() {
 							</MyCard>
 						</div>
 					</div>
-					<div className="container__break h-[130px] mt-[20px]">
+					<div className="container__break absolute bottom-0 w-full h-[144px] mt-[20px]">
 						<Footer/>
 					</div>
 					</div>

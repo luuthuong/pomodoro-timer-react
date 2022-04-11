@@ -16,7 +16,7 @@ import Analytics from './../page/analytic/Analytics';
 
 const MyRouter = () => {
   return (
-    <div className="w-full h-full  mr-[20px]">
+    <div className="w-full h-full  mr-[20px] rounded-2xl bg-white neu-shadow  p-2">
       <Routes>
         <Route path="/" element={<Pomodoro/>}/>
         <Route path="login" element={<Login/>}/>

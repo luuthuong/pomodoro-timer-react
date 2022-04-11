@@ -8,7 +8,7 @@ import Drop from '../../drop/Drop'
 
 const MyCard = () => {
   return (
-    <div className="mycard">
+    <div className="mycard neu-shadow">
         <Drop data={[{title:'nguyen '}]}  placeholder="Choose Task"/>
     </div>
   )

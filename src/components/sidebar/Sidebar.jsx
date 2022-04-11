@@ -35,7 +35,7 @@ const listFeatures =[
 const Sidebar = () => {
 
     return (
-        <div className="sidebar">
+        <div className="sidebar neu-shadow">
             <div className="sidebar__container">
                 <div className="sidebar-user">
                         <img src="https://images.pexels.com/photos/4029925/pexels-photo-4029925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />

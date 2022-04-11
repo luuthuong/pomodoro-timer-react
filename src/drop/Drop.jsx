@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import './drop.scss'
 
 const Drop = (props) => {
-    const [active,setActive]=useState(true);
+    const [active,setActive]=useState(false);
     const [content,setContent] = useState();
   return (
     <div >
@@ -14,7 +14,7 @@ const Drop = (props) => {
                 {
                     props.data?props.data.map((item,index)=>{
                         return(
-                            <div onClick={()=>{
+                            <div key={index} onClick={()=>{
                                 setContent(item.title);
                                 setActive(!active)
                             }} className="content-item ">
