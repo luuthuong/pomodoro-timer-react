@@ -1,3 +1,7 @@
 # Pomodoro timer
 
-<h1>Pomodoro Timer </h1>
+# Resource
+- Tailwindcss
+- SwiperJS
+- React-Redux
+- React-router-dom
