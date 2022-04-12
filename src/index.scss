@@ -1,37 +1,48 @@
-@use './scss/' as*;
+@use './scss/'as*;
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Mali', cursive;
 }
-body{
-    min-height: 100vh;
-    background-color: var(--main-color);
+
+body {
+  min-height: 100vh;
+  background-color: var(--main-color);
 }
 
-@layer base{
-  h1{
-    color:red;
+@layer base {
+  h1 {
+    color: red;
   }
-  h2{
-    color:blue;
+
+  h2 {
+    color: blue;
   }
 }
-@layer components{
- .neu-shadow{
-  @apply shadow-md shadow-neutral-400; 
- }
+
+@layer components {
+  .neu-shadow {
+    @apply shadow-md shadow-neutral-400;
+  }
+  .shadow-inset{
+    box-shadow:inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px 1px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px 1px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px  rgba(0, 0, 0,0.05);
+  }
 }
-.App{
+
+.App {
   @apply flex justify-center items-center w-full h-screen
 }
-.container{
-  @apply p-8 w-[1280px] h-3/4 border-1 bg-primary rounded-3xl shadow-2xl flex  items-center justify-between;
-}
 
+.container {
+  @apply p-8 w-[1280px] h-3/4 border-1 bg-primary rounded-3xl shadow-2xl flex items-center justify-between;
+}

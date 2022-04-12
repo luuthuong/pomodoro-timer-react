@@ -2,12 +2,14 @@ import React from "react";
 
 import {BrowserRouter} from "react-router-dom"
 
-
 import Bubble from './components/bubble/Bubble';
 
 import Sidebar from "./components/sidebar/Sidebar";
+
 import MyRouter from "./router/MyRouter";
+
 import MyCard from './components/card/MyCard';
+
 import Footer from "./components/footer/Footer";
 
 function App() {
@@ -22,11 +24,9 @@ function App() {
 					<div className="container__break w-full h-[75%] flex items-center   ">
 						<MyRouter />
 						<div className="right h-full w-[300px] flex flex-col items-center justify-between ">
-							<MyCard title="Task" placeholder="Choose task">
-
+							<MyCard data={[{title:'task'}]} placeholder="Choose task">
 							</MyCard>
-							<MyCard title="Task" placeholder="Choose task">
-
+							<MyCard data={[{title:'music'}]} placeholder="Choose music">
 							</MyCard>
 						</div>
 					</div>

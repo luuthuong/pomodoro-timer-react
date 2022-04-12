@@ -4,6 +4,29 @@
     &::before{
         @apply absolute w-full h-full top-0 left-0 ;
         content:"";
-        background: linear-gradient(to top ,rgba(0,0,0,.4),rgba(0,0,0,.3));
+        background: linear-gradient(to top ,rgba(0,0,0,.7),rgba(0,0,0,.3));
     }
+    &--container{
+        @apply h-full flex text-xl;
+        .footer-datetime{
+            @apply relative min-w-[200px] relative h-full  flex flex-col justify-center p-2 leading-8 items-center;
+            .time{
+                @apply text-3xl font-bold ;
+            }
+            .date{
+                @apply text-lg text-gray-400 font-semibold;
+            }
+            &::before{
+                content:"";
+                @apply absolute border-r-1 w-full h-4/5 border-white;
+            }
+        }
+        .footer-quote{
+            @apply text-center w-full p-5 text-gray-400;
+            .author{
+                @apply text-right;
+            }
+        }
+    }
+
 }

@@ -1,8 +1,8 @@
 .button{
-    @apply flex justify-center items-center w-32 h-10 bg-gradient-to-tr from-[#56ab2f] to-[#a8e063]  rounded-2xl text-white text-base shadow-[0_0_7px_rgba(255,255,255,.4)] relative z-10 hover:tracking-widest hover:scale-105 hover:after:opacity-100 overflow-hidden  ;
+    @apply flex justify-center items-center w-32 h-10 bg-gradient-to-tr from-[#56ab2f] to-[#a8e063]  rounded-2xl text-textColor font-bold text-base shadow-[0_0_7px_rgba(255,255,255,.4)] relative z-10 hover:tracking-widest hover:scale-105 hover:after:opacity-100 hover:text-white overflow-hidden  ;
     transition:all .3s ease  ;
     i{
-        @apply ml-1
+        @apply ml-1 text-2xl
     }
     &::after{
         @apply w-full h-full absolute content-[""] bg-gradient-to-tr from-[#56ab2f80] to-[#a8e06386] rounded-2xl animate-[gradient_1s_linear_infinite] blur-sm  z-[-2] top-0 left-0 opacity-0  ;  
@@ -17,12 +17,12 @@
     }
 }
 .button-outline {
-    @apply flex justify-center items-center w-32 h-10 bg-transparent  rounded-2xl text-white text-base shadow-[0_0_7px_rgba(255,255,255,.4)] relative z-10 hover:scale-105  border-red-500 border-[1px] hover:bg-red-900 border-1  overflow-hidden  ;
+    @apply flex justify-center items-center w-32 h-10 bg-transparent  rounded-2xl text-textColor font-bold text-base shadow-[0_0_7px_rgba(255,255,255,.4)] relative z-10 hover:scale-105  border-red-500 border-[1px] hover:bg-red-900 border-1  overflow-hidden  ;
     transition: all .3s ease;
     &:hover{
-        @apply tracking-widest
+        @apply tracking-widest text-white
     }
     i{
-        @apply ml-1
+        @apply ml-1 text-2xl
     }
 }

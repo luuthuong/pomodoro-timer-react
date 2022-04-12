@@ -1,0 +1,24 @@
+.pomodoro{
+    @apply  w-full h-full ;
+    &--header{
+        @apply relative w-full h-10 cursor-pointer select-none flex justify-evenly items-center ;
+        &>*{
+            @apply relative hover:text-third;
+            transition:all .2s ease;
+            &::before{
+                @apply absolute bottom-0  content-[""] w-0 h-[3px] bg-green-700;
+                transition:width .3s ease ;
+            }
+            &.active{
+                @apply tracking-widest text-third;
+                &::before{
+                    @apply w-full text-third tracking-widest;
+                }
+            }
+        }
+    }
+
+&--main{
+    @apply  w-full h-full flex flex-col justify-evenly items-center;
+}
+}

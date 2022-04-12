@@ -6,10 +6,10 @@ import Drop from '../../drop/Drop'
 
 
 
-const MyCard = () => {
+const MyCard = (props) => {
   return (
     <div className="mycard neu-shadow">
-        <Drop data={[{title:'nguyen '}]}  placeholder="Choose Task"/>
+        <Drop data={props.data}  placeholder={props.placeholder}/>
     </div>
   )
 }

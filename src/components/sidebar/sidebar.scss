@@ -21,14 +21,14 @@
                     z-index: 10;
                 }
                 &::before{
-                    @apply absolute w-0 h-full bg-gradient-to-tl from-[#699256] to-[#0a7718] top-0 left-0 z-0  ;
+                    @apply absolute w-0 h-full rounded-r-full bg-gradient-to-tl from-[#699256] to-[#0a7718] top-0 left-0 z-0  ;
                     content:"";
                     transition:all .3s $cubic-bezier;
                 }
                 &.active{
                     @apply text-white tracking-widest;
                     &::before{
-                        @apply delay-75 w-full shadow-sm shadow-white;
+                        @apply delay-75 w-[150%] shadow-sm shadow-white;
 
                     }
                 }
@@ -45,7 +45,6 @@
             @apply absolute h-36 bottom-0 left-0;
             img{
                 @apply relative ;
-               
             } 
             &:before {
                 content: "";

@@ -18,7 +18,7 @@ const MyRouter = () => {
   return (
     <div className="w-full h-full  mr-[20px] rounded-2xl bg-white neu-shadow  p-2">
       <Routes>
-        <Route path="/" element={<Pomodoro/>}/>
+        <Route index element={<Pomodoro/>}/>
         <Route path="login" element={<Login/>}/>
         <Route path="register" element={<Register/>}/>
         <Route path="list" element={<Todo/>}/>

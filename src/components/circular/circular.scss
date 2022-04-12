@@ -1,0 +1,26 @@
+.circular{
+    @apply relative;
+    @apply w-40 h-40   ;
+    .outer{
+        @apply  flex justify-center items-center rounded-full border-2 border-third w-full h-full ;
+        .inner{
+            @apply text-2xl font-extrabold tracking-widest flex justify-center items-center w-4/5 h-4/5 rounded-full border border-primary;
+
+        }
+    }   
+    svg{
+        @apply w-full h-full absolute top-0 left-0;
+        circle{
+            cx:80px;
+            cy:80px;
+            r:70px;
+            stroke-linecap: round;
+            stroke-width:20px;
+            fill: none;
+            stroke:url("#gradient");
+            stroke-dasharray:440;
+            stroke-dashoffset: 0;
+            transition: all .5s linear;
+        }
+    }
+}
