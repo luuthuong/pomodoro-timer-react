@@ -4,8 +4,7 @@
     .outer{
         @apply  flex justify-center items-center rounded-full border-2 border-third w-full h-full ;
         .inner{
-            @apply text-2xl font-extrabold tracking-widest flex justify-center items-center w-4/5 h-4/5 rounded-full border border-primary;
-
+            @apply text-3xl text-textColor font-extrabold tracking-widest flex justify-center items-center w-4/5 h-4/5 rounded-full border border-primary;
         }
     }   
     svg{

@@ -1,5 +1,5 @@
 .footer{
-    @apply relative   h-full rounded-2xl bg-[url('https://images.pexels.com/photos/6954509/pexels-photo-6954509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')] bg-cover bg-center overflow-hidden;
+    @apply relative w-full   h-full rounded-2xl bg-no-repeat  bg-[url('https://images.pexels.com/photos/6954509/pexels-photo-6954509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')] bg-cover bg-center overflow-hidden;
 
     &::before{
         @apply absolute w-full h-full top-0 left-0 ;
@@ -7,14 +7,14 @@
         background: linear-gradient(to top ,rgba(0,0,0,.7),rgba(0,0,0,.3));
     }
     &--container{
-        @apply h-full flex text-xl;
+        @apply h-full flex text-xl 640:text-sm;
         .footer-datetime{
-            @apply relative min-w-[200px] relative h-full  flex flex-col justify-center p-2 leading-8 items-center;
+            @apply relative min-w-[30%] relative h-full  flex flex-col justify-center p-2 leading-8 items-center ;
             .time{
-                @apply text-3xl font-bold ;
+                @apply text-3xl 1028:text-xl 640:text-lg font-bold ;
             }
             .date{
-                @apply text-lg text-gray-400 font-semibold;
+                @apply 1028:text-base  640:text-sm text-lg text-gray-400 font-semibold;
             }
             &::before{
                 content:"";
@@ -22,11 +22,10 @@
             }
         }
         .footer-quote{
-            @apply text-center w-full p-5 text-gray-400;
+            @apply text-center w-full p-5 bg-transparent text-gray-400 1028:text-lg 640:text-sm;
             .author{
                 @apply text-right;
             }
         }
     }
-
 }

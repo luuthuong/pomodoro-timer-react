@@ -27,7 +27,12 @@ module.exports = {
       },
       borderWidth:{
         '1':'1px'
-      } 
+      } ,
+      screens:{
+        'lg':{'max':'1280px'},
+        '1028':{'min':'640px','max':'1028px'},
+        '640':{'max':'640px'}
+      }
     },
 
   },

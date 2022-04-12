@@ -1,24 +1,20 @@
 @use '../../scss/' as *;
 
 .sidebar{    
-    @apply  min-w-[250px] h-full overflow-hidden   bg-white rounded-2xl;
+    @apply  min-w-[250px] h-full overflow-hidden   bg-white rounded-2xl 1028:min-w-[200px];
 
     &__container{
         @apply relative h-full w-full flex flex-col justify-center items-center ;
         .sidebar-element{
             @apply  w-full;
             .sidebar-item{
-                @apply relative transition-all relative flex justify-start items-center text-textColor text-base font-medium capitalize p-2  mb-3 hover:tracking-widest ;
+                @apply relative transition-all relative flex justify-start items-center text-textColor text-base font-medium capitalize p-2 640:text-sm  mb-3 hover:tracking-widest ;
                 transition:all .3s linear;
                 i{
                     @apply text-3xl mr-4;
                 }
-                // &::after{
-                //     @apply absolute content-[""] w-10 h-10 rounded-full bg-white top-[-20px] right-[0];
-                // }
                 &>*{
-                    position: relative;
-                    z-index: 10;
+                    @apply relative ;
                 }
                 &::before{
                     @apply absolute w-0 h-full rounded-r-full bg-gradient-to-tl from-[#699256] to-[#0a7718] top-0 left-0 z-0  ;
@@ -29,7 +25,6 @@
                     @apply text-white tracking-widest;
                     &::before{
                         @apply delay-75 w-[150%] shadow-sm shadow-white;
-
                     }
                 }
             }

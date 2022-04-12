@@ -16,7 +16,19 @@ import Analytics from './../page/analytic/Analytics';
 
 const MyRouter = () => {
   return (
-    <div className="w-full h-full  mr-[20px] rounded-2xl bg-white neu-shadow  p-2">
+    <div className="
+      w-full 
+      h-full 
+      flex 
+      justify-center 
+      items-center 
+      mr-[20px] 
+      lg:mr-0
+      rounded-2xl
+      bg-white 
+      neu-shadow 
+      lg:h-full
+    ">
       <Routes>
         <Route index element={<Pomodoro/>}/>
         <Route path="login" element={<Login/>}/>

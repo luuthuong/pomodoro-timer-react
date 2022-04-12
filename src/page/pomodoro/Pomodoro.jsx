@@ -33,7 +33,7 @@ const Pomodoro = () => {
 			</header>
             <div className="pomodoro--main">
                 <Circular start={start} timer={`${time}:00`} />
-                <div className="btn-group flex">
+                <div className="btn-group flex lg:flex-col lg:gap-2  lg:justify-center lg:h-full">
                     <Button
                         onClick={() => handleStart(true)}
                         className="mr-5"
