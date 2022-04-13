@@ -1,0 +1,9 @@
+.todo{
+    @apply w-full h-full bg-white rounded-2xl; 
+    &__title{
+        @apply text-2xl font-bold text-center ;
+        h1{
+            @apply text-textColor;
+        }
+    }
+}

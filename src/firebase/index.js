@@ -5,14 +5,19 @@ import {
             doc,
             deleteDoc,
             updateDoc,
-            runTransaction
+            runTransaction,
+            getDoc
         } from 'firebase/firestore/lite';
+
 import firebase from './config';
 
 const getData= async(path)=>{
-    const ref=collection(firebase.fb,path)
-    const snapshot=await getDocs(ref)
-    const data=snapshot.docs.map(doc=>doc.data())
+    // const dataRef=collection(firebase.fb,'todolist')
+    // const snapshot=await getDocs(dataRef)
+    // const data=snapshot.docs.map(doc=>doc.data())
+    // console.log(snapshot);
+    const querySnapshot = await getDocs(collection(firebase.db, path));
+     return querySnapshot
 }
 const addData= async(path,data)=>{
     try{

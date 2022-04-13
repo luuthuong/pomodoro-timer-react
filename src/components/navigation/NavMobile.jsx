@@ -18,7 +18,7 @@ const NavMobile = () => {
                     to={feature.path}
                 >
                     <i className={feature.icon}></i>
-                    <div>{feature.title}</div>
+                    <div className="navmobile-title">{feature.title}</div>
                 </NavLink>
             );
           })

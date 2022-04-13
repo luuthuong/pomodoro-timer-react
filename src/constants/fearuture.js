@@ -21,9 +21,15 @@ const listFeatures =[
         icon:'bx bx-cog'
     },
     {
+        title:'about',
+        path:'/about-me',
+        icon:'bx bx-info-circle'
+    },
+    {
         title:'log out',
         path:'/logout',
         icon:'bx bx-log-out'
     },
 ]
+
 export default listFeatures

@@ -1,5 +1,5 @@
 .footer{
-    @apply relative w-full h-full rounded-2xl bg-no-repeat bg-cover bg-center overflow-hidden mb-sm:opacity-0;
+    @apply relative w-full h-full rounded-2xl bg-no-repeat bg-cover bg-center overflow-hidden mb-sm:opacity-0 mb:opacity-0;
     background-image: url("https://images.pexels.com/photos/6954509/pexels-photo-6954509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     &::before{
         @apply absolute w-full h-full top-0 left-0 ;

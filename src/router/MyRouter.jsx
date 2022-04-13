@@ -19,14 +19,8 @@ const MyRouter = () => {
     <div className="
       w-full 
       h-full 
-      flex 
-      justify-center 
-      items-center 
-      mr-[20px] 
+      
       lg:mr-0
-      rounded-2xl
-      bg-white 
-      neu-shadow 
       lg:h-full
     ">
       <Routes>

@@ -8,7 +8,7 @@
         .sidebar-element{
             @apply  w-full;
             .sidebar-item{
-                @apply relative transition-all flex justify-start items-center text-textColor text-base font-medium capitalize p-2 640:text-sm  mb-3 hover:tracking-widest ;
+                @apply relative transition-all flex justify-start items-center text-textColor text-base font-medium capitalize p-2 gap-2 640:text-sm   hover:tracking-widest ;
                 transition:all .3s linear;
                 i{
                     @apply text-3xl mr-4;

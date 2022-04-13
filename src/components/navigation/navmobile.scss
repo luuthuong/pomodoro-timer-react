@@ -1,12 +1,19 @@
 .navmobile{
-    @apply w-full h-20  fixed z-20 bottom-0 left-0 bg-primary  justify-center grid-cols-5 items-center gap-x-5 hidden mb:grid mb-sm:gap-x-2 ;
+    @apply w-full h-20  fixed z-20 bottom-0 left-0 bg-primary  justify-center grid-cols-6 items-center gap-x-5 hidden mb:grid mb-sm:gap-x-0 ;
     .navmobile-element{
         transition:all .1s ease;
-        @apply relative flex flex-col justify-center items-center bg-primary capitalize z-10 text-center w-full h-full mb-sm:text-sm   ;
+        @apply relative flex flex-col justify-center items-center bg-primary capitalize z-10 text-center w-full h-full mb-sm:text-xs   ;
+        .navmobile-title{
+            transition:opacity .3s linear;
+            opacity: 0;
+        }
         &.active{
             @apply rounded-t-full -translate-y-7 text-third;
             i{
                 @apply text-third;
+            }
+            .navmobile-title{
+                opacity: 1;
             }
         }
         i{

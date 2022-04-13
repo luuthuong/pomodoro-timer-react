@@ -1,14 +1,10 @@
 .container {
-    @apply relative p-8 w-[1280px] h-3/4  bg-primary rounded-3xl shadow-2xl flex overflow-y-auto   items-center justify-end  mb-sm:w-full 640:h-full 640:w-full 640:p-3 ;
+    @apply relative p-4 w-[1280px] h-3/4  bg-primary rounded-3xl shadow-2xl flex gap-x-3 overflow-y-auto   items-center justify-end  mb-sm:w-full 640:h-full 640:w-full 640:p-3 1028:h-full mb:rounded-none ;
 
     &__content{
-        @apply w-full h-full relative ml-5  640:w-full 640:ml-0  ;
+        @apply w-full h-full relative  640:w-full 640:ml-0  ;
         .top{
-            @apply w-full h-[75%] flex gap-5 items-center lg:justify-between lg:flex-col 640:h-full 640:justify-center;
-            .right{
-                @apply  z-10 h-full  w-full  grid gap-2  ;
-                grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-            }
+            @apply w-full h-[75%] mb:h-full  ;
         }
     }
     .footer{

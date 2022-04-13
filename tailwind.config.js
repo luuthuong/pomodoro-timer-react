@@ -27,9 +27,9 @@ module.exports = {
       },
       borderWidth:{
         '1':'1px'
-      } ,
+      },
       screens:{
-        'lg':{'max':'1280px'},
+        'lg':{'min':'1028px','max':'1280px'},
         '1028':{'min':'768px','max':'1028px'},
         '640':{'max':'768px'},
         'mb':{'max':'640px'},

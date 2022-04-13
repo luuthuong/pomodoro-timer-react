@@ -21,16 +21,6 @@ const Layout = () => {
                 <div className="container__content">
                     <div className=" top">
                         <MyRouter />
-                        <div className="right">
-                            <MyCard
-                                data={[{ title: "task" }]}
-                                placeholder="Choose task"
-                            ></MyCard>
-                            <MyCard
-                                data={[{ title: "music" }]}
-                                placeholder="Choose music"
-                            ></MyCard>
-                        </div>
                     </div>
                     <div className="footer">
                         <Footer />
