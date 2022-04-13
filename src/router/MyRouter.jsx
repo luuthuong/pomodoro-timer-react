@@ -19,7 +19,6 @@ const MyRouter = () => {
     <div className="
       w-full 
       h-full 
-      
       lg:mr-0
       lg:h-full
     ">

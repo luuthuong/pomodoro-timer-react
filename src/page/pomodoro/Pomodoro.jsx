@@ -11,6 +11,7 @@ import clockType from "./../../constants/clock";
 import handleFirebase from "../../firebase";
 
 import MyCard from "./../../components/card/MyCard";
+
 import Player from "../../components/player/Player";
 
 const Pomodoro = () => {
