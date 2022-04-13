@@ -1,0 +1,20 @@
+.navmobile{
+    @apply w-full h-20  fixed z-20 bottom-0 left-0 bg-primary  justify-center grid-cols-5 items-center gap-x-5 hidden mb:grid mb-sm:gap-x-2 ;
+    .navmobile-element{
+        transition:all .1s ease;
+        @apply relative flex flex-col justify-center items-center bg-primary capitalize z-10 text-center w-full h-full mb-sm:text-sm   ;
+        &.active{
+            @apply rounded-t-full -translate-y-7 text-third;
+            i{
+                @apply text-third;
+            }
+        }
+        i{
+            @apply relative   text-3xl text-textColor select-none mb-sm:text-xl ;
+            pointer-events: none;
+        }
+        // &::before{
+        //     @apply absolute content-[""] w-full h-full rounded-t-full bg-red-500 p-2
+        // }
+    }
+}

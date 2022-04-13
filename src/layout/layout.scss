@@ -1,61 +1,17 @@
 .container {
-    @apply p-8 
-            w-[1280px] 
-            h-3/4 
-            border-1 
-            bg-primary 
-            rounded-3xl 
-            shadow-2xl 
-            flex 
-            items-center 
-            justify-between
-            lg:h-4/5
-            lg:justify-center
-            lg:min-w-[90%]
-            ;
+    @apply relative p-8 w-[1280px] h-3/4  bg-primary rounded-3xl shadow-2xl flex overflow-y-auto   items-center justify-end  mb-sm:w-full 640:h-full 640:w-full 640:p-3 ;
+
     &__content{
-        @apply 
-                relative 
-                z-0
-                ml-[20px] 
-                w-full
-                h-full
-                ;
+        @apply w-full h-full relative ml-5  640:w-full 640:ml-0  ;
         .top{
-            @apply lg:flex-col lg:justify-between items-center ;
+            @apply w-full h-[75%] flex gap-5 items-center lg:justify-between lg:flex-col 640:h-full 640:justify-center;
             .right{
-                @apply 
-                z-10
-                h-full 
-                w-full 
-                grid
-                gap-2
-                1028:w-full
-                640:w-full
-                ;
+                @apply  z-10 h-full  w-full  grid gap-2  ;
                 grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-                
             }
         }
     }
-    &__break{
-        @apply w-full h-[75%] flex gap-5 items-center;
-        
-    }
     .footer{
-        @apply absolute bottom-0 w-full h-[144px] ;
+        @apply w-full h-[144px] absolute bottom-0 left-0 mb:relative mb:mt-5 ;
     }
-  }
-  
-
-//   flex 
-//   flex-col 
-//   gap-5
-//   items-center 
-//   justify-between  
-//   1028:flex-col
-//   640:flex-row
-//   lg:flex-row
-//   lg:w-full 
-//   lg:gap-5
-//   lg:justify-between
+}

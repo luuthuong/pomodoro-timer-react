@@ -41,7 +41,7 @@ body {
 }
 
 .App {
-  @apply flex justify-center items-center w-full h-screen overflow-hidden;
+  @apply relative flex justify-center items-center w-full h-screen overflow-hidden ;
 }
 
 

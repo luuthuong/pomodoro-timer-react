@@ -30,11 +30,12 @@ module.exports = {
       } ,
       screens:{
         'lg':{'max':'1280px'},
-        '1028':{'min':'640px','max':'1028px'},
-        '640':{'max':'640px'}
+        '1028':{'min':'768px','max':'1028px'},
+        '640':{'max':'768px'},
+        'mb':{'max':'640px'},
+        'mb-sm':{'max':'390px'}  
       }
     },
-
   },
   plugins: [
     require('@tailwindcss/typography'),

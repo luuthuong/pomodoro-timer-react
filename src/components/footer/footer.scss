@@ -1,6 +1,6 @@
 .footer{
-    @apply relative w-full   h-full rounded-2xl bg-no-repeat  bg-[url('https://images.pexels.com/photos/6954509/pexels-photo-6954509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')] bg-cover bg-center overflow-hidden;
-
+    @apply relative w-full h-full rounded-2xl bg-no-repeat bg-cover bg-center overflow-hidden mb-sm:opacity-0;
+    background-image: url("https://images.pexels.com/photos/6954509/pexels-photo-6954509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     &::before{
         @apply absolute w-full h-full top-0 left-0 ;
         content:"";
@@ -9,7 +9,7 @@
     &--container{
         @apply h-full flex text-xl 640:text-sm;
         .footer-datetime{
-            @apply relative min-w-[30%] relative h-full  flex flex-col justify-center p-2 leading-8 items-center ;
+            @apply relative min-w-[30%]  h-full  flex flex-col justify-center p-2 leading-8 items-center ;
             .time{
                 @apply text-3xl 1028:text-xl 640:text-lg font-bold ;
             }

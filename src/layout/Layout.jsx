@@ -11,16 +11,17 @@ import Sidebar from "../components/sidebar/Sidebar";
 import MyRouter from "./../router/MyRouter";
 
 import "./layout.scss";
+import NavMobile from './../components/navigation/NavMobile';
 
 const Layout = () => {
     return (
         <BrowserRouter>
             <div className="container">
                 <Sidebar />
-                <div className=" container__content">
-                    <div className="container__break top">
+                <div className="container__content">
+                    <div className=" top">
                         <MyRouter />
-                        <div className="right ">
+                        <div className="right">
                             <MyCard
                                 data={[{ title: "task" }]}
                                 placeholder="Choose task"
@@ -31,11 +32,12 @@ const Layout = () => {
                             ></MyCard>
                         </div>
                     </div>
-                    <div className=" footer ">
+                    <div className="footer">
                         <Footer />
                     </div>
                 </div>
             </div>
+            <NavMobile/>
         </BrowserRouter>
     );
 };
