@@ -1,9 +1,9 @@
 .drop-input{
-    @apply w-full h-10  p-2 border-1 border-third font-semibold rounded-xl cursor-pointer text-textColor hover:border-primary whitespace-nowrap overflow-hidden text-ellipsis break-words 640:text-sm
+    @apply w-full min-w-[150px] h-10  p-2 border-1 border-third font-semibold rounded-xl cursor-pointer text-textColor hover:border-primary whitespace-nowrap overflow-hidden text-ellipsis break-words 640:text-sm
     ;
 }
 .drop-expand{
-    @apply inline-block relative translate-x-[-50%] left-[50%] mt-1 w-full scale-0 bg-primary rounded-lg p-2 -translate-y-9 640:text-sm;
+    @apply inline-block absolute z-50 translate-x-[-50%] left-[50%] mt-1 w-full scale-0 bg-primary rounded-lg p-2 -translate-y-9 640:text-sm;
     transition:transform .3s ease;
     &.active{
         @apply scale-100 translate-y-0;

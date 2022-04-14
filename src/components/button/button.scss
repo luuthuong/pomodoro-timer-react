@@ -1,5 +1,5 @@
 .button{
-    @apply flex justify-center items-center w-32 h-10 bg-gradient-to-tr from-[#56ab2f] to-[#a8e063]  rounded-2xl text-textColor font-bold text-base shadow-[0_0_7px_rgba(255,255,255,.4)] relative z-10 hover:tracking-widest hover:scale-105 hover:after:opacity-100 hover:text-white overflow-hidden  ;
+    @apply flex justify-center items-center w-40 h-10 bg-gradient-to-tr from-[#56ab2f] to-[#a8e063]  rounded-2xl text-textColor font-bold text-base shadow-[0_0_7px_rgba(255,255,255,.4)] relative z-10 hover:tracking-widest hover:scale-105 hover:after:opacity-100 hover:text-white overflow-hidden  ;
     transition:all .3s ease  ;
     i{
         @apply ml-1 text-2xl
@@ -17,7 +17,7 @@
     }
 }
 .button-outline {
-    @apply flex justify-center items-center w-32 h-10 bg-transparent  rounded-2xl text-textColor font-bold text-base shadow-[0_0_7px_rgba(255,255,255,.4)] relative z-10 hover:scale-105  border-red-500 border-[1px] hover:bg-red-900 border-1  overflow-hidden  ;
+    @apply flex justify-center items-center w-40 h-10 bg-transparent  rounded-2xl text-textColor font-bold text-base shadow-[0_0_7px_rgba(255,255,255,.4)] relative z-10 hover:scale-105  border-red-500  hover:bg-red-900 border-1  overflow-hidden  ;
     transition: all .3s ease;
     &:hover{
         @apply tracking-widest text-white

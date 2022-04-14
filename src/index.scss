@@ -51,6 +51,10 @@ body {
                 0px 12px 10px -10px  rgba(0, 0, 0,0.05);
   }
 }
+button,textarea,input{
+  outline: none;
+  padding:5px;
+}
 
 .App {
   @apply relative flex justify-center items-center w-full h-screen  ;

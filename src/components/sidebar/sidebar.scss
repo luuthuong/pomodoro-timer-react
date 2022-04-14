@@ -1,7 +1,7 @@
 // @use '../../scss/' as *;
 
 .sidebar{    
-    @apply  min-w-[250px] h-full overflow-hidden bg-white rounded-2xl mb:hidden;
+    @apply  min-w-[250px] 1028:min-w-[200px] 640:min-w-[200px] h-full overflow-hidden bg-white rounded-2xl mb:hidden;
 
     &__container{
         @apply relative h-full w-full flex flex-col justify-center items-center ;

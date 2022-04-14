@@ -7,7 +7,7 @@ const Button = props => {
     <div className="button-wraper">
         <button className={`button ${props.className}`} onClick={props.onClick}>
             {props.title}
-            <i className='bx bx-play'></i>
+            <i className={props.icon}></i>
         </button>
     </div>
   )
@@ -17,9 +17,9 @@ Button.propTypes = {
 }
 export const ButtonOutLine = props => {
     return(
-        <button onClick={props.onClick} className="button-outline"> 
+        <button onClick={props.onClick} className={`button-outline ${props.className}`}> 
         {props.title}
-        <i className='bx bx-stop'></i>
+        <i className={props.icon}></i>
         </button>
     )
 }

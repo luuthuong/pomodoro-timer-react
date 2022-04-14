@@ -1,0 +1,13 @@
+.form-custom{
+    @apply w-1/2 min-h-[256px]  overflow-hidden absolute  border   left-1/2 -translate-x-1/2  rounded-2xl p-2 bg-primary m-[10px_auto] -translate-y-10 scale-0 640:w-full mb:w-full  ;
+    transition:all .3s ease-in-out ;
+    &.active{
+        @apply -translate-y-0 scale-100;
+    }
+    .btn-add{
+        @apply  w-full justify-self-center items-center  ;
+    }
+    .input-custom{
+        @apply mb-3 rounded-xl shadow-sm focus:border-1 focus:border-third;
+    }
+}

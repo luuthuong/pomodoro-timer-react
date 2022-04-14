@@ -4,20 +4,19 @@ import Circular from "../../components/circular/Circular";
 
 import Button, { ButtonOutLine } from "./../../components/button/Button";
 
-import "./pomodoro.scss";
-
 import clockType from "./../../constants/clock";
-
-import handleFirebase from "../../firebase";
 
 import MyCard from "./../../components/card/MyCard";
 
 import Player from "../../components/player/Player";
 
+import "./pomodoro.scss";
+
 const Pomodoro = () => {
     const [start, setStart] = useState(false);
     const [time, setTime] = useState("25");
     const [state, setState] = useState(0);
+
     const handleStart = (status) => {
         setStart(status);
     };
@@ -51,16 +50,19 @@ const Pomodoro = () => {
                             }}
                             className="mr-5"
                             title="Start"
+                            icon="bx bx-play"
                         ></Button>
                         <ButtonOutLine
                             onClick={() => handleStart(false)}
                             title="Stop"
+                            icon='bx bx-stop'
                         ></ButtonOutLine>
                     </div>
                 </div>
             </div>
             <div className="element card">
                 <MyCard
+                    title="Task"
                     data={[{ title: "task" }]}
                     placeholder="Choose task"
                 ></MyCard>

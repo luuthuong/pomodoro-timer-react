@@ -1,9 +1,18 @@
 .todo{
-    @apply w-full h-full bg-white rounded-2xl; 
+    @apply p-2 w-full h-full bg-white rounded-2xl; 
     &__title{
-        @apply text-2xl font-bold text-center ;
+        @apply text-2xl font-bold text-center p-2 ;
         h1{
             @apply text-textColor;
         }
+    }
+    &__options{
+        @apply  flex justify-center items-center gap-2;
+        .add-task{
+            @apply  w-full   ;
+        }
+    }
+    &__content{
+
     }
 }
