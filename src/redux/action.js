@@ -1,7 +1,9 @@
-const handleAction=(type,data)=>(
-    {
-        action:type,
+const handleAction=(type,data)=>{
+    return {
+        type:type,
         payload:data
     }
-)
+}
+    
+
 export default handleAction

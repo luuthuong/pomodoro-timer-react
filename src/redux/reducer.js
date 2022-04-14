@@ -1,10 +1,12 @@
 import { FilterReducer } from './filter/FilterSlice';
+
 import { TodoReducer } from './todolist/TodolistSlice';
-const reducer = (state, action) => {
-    console.log(state);
+
+
+const reducer = (state={}, action) => {
     return {
-        filters: FilterReducer(state, action),
-        todos: TodoReducer(state, action)
+        filters: FilterReducer(state.filters, action),
+        todos: TodoReducer(state.todos, action)
     }
 }
 

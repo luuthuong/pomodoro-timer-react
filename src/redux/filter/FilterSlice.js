@@ -1,5 +1,5 @@
 const initState=[]
 
-export const FilterReducer=() =>{
+export const FilterReducer=(state={},action) =>{
 
 }

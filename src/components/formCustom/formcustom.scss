@@ -1,5 +1,5 @@
 .form-custom{
-    @apply w-1/2 min-h-[256px]  overflow-hidden absolute  border   left-1/2 -translate-x-1/2  rounded-2xl p-2 bg-primary m-[10px_auto] -translate-y-10 scale-0 640:w-full mb:w-full  ;
+    @apply w-1/2 min-h-[256px]  overflow-hidden absolute z-50  border   left-1/2 -translate-x-1/2  rounded-2xl p-2 bg-primary m-[10px_auto] -translate-y-10 scale-0 640:w-full mb:w-full  ;
     transition:all .3s ease-in-out ;
     &.active{
         @apply -translate-y-0 scale-100;

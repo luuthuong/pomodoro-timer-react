@@ -20,9 +20,17 @@ import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
 import Checkbox from '@mui/material/Checkbox';
 
+import { useSelector } from "react-redux";
+
+import { todoListSelector } from "../../redux/selector";
+
 const Todo = () => {
     const [state, setState] = useState(false);
 	const [visible,setVisible] = useState(false);
+	const todolist = useSelector(todoListSelector)
+
+	console.log(todolist);
+
     return (
         <div className="todo">
             <header className="todo__title">
@@ -45,27 +53,26 @@ const Todo = () => {
                 />
             </section>
             <section className="todo__content">
-                {new Array(20).fill(0).map((iem, index) => (
+                {todolist.map((item, index) => (
                     <div key={index} className="todo__content__element">
                         <div className="flex gap-3 justify-center items-center">
                             <Checkbox
                                 inputProps={{ "aria-label": "controlled" }}
 								sx={{
 									'&.Mui-checked': {
-									  color: "#05c46b",
+									color: "#05c46b",
 									},}}
 								className="icon"
                             />
                             <div>
-                                {index} Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quod, officia.
+                                {item.data.name}
                             </div>
                         </div>
                         <div className="flex gap-1">
                             {!visible ? (
-                                <VisibilityIcon className="icon" />
+                                <VisibilityIcon onClick={()=>setVisible(!visible)} className="icon" />
                             ) : (
-                                <VisibilityOffIcon className="icon" />
+                                <VisibilityOffIcon onClick={()=>setVisible(!visible)} className="icon" />
                             )}
                             <ModeEditIcon className="icon" />
                             <DeleteForeverIcon className="icon" />
