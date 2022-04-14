@@ -12,12 +12,7 @@ import {
 import firebase from './config';
 
 const getData= async(path)=>{
-    // const dataRef=collection(firebase.fb,'todolist')
-    // const snapshot=await getDocs(dataRef)
-    // const data=snapshot.docs.map(doc=>doc.data())
-    // console.log(snapshot);
-    const querySnapshot = await getDocs(collection(firebase.db, path));
-     return querySnapshot
+    return await getDocs(collection(firebase.db, path));
 }
 const addData= async(path,data)=>{
     try{

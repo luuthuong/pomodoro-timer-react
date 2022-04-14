@@ -10,8 +10,19 @@ import Button from "./../../components/button/Button";
 
 import FormCustom from "../../components/formCustom/FormCustom";
 
+import VisibilityIcon from '@mui/icons-material/Visibility';
+
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+
+import ModeEditIcon from '@mui/icons-material/ModeEdit';
+
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+
+import Checkbox from '@mui/material/Checkbox';
+
 const Todo = () => {
     const [state, setState] = useState(false);
+	const [visible,setVisible] = useState(false);
     return (
         <div className="todo">
             <header className="todo__title">
@@ -34,8 +45,34 @@ const Todo = () => {
                 />
             </section>
             <section className="todo__content">
-
-			</section>
+                {new Array(20).fill(0).map((iem, index) => (
+                    <div key={index} className="todo__content__element">
+                        <div className="flex gap-3 justify-center items-center">
+                            <Checkbox
+                                inputProps={{ "aria-label": "controlled" }}
+								sx={{
+									'&.Mui-checked': {
+									  color: "#05c46b",
+									},}}
+								className="icon"
+                            />
+                            <div>
+                                {index} Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quod, officia.
+                            </div>
+                        </div>
+                        <div className="flex gap-1">
+                            {!visible ? (
+                                <VisibilityIcon className="icon" />
+                            ) : (
+                                <VisibilityOffIcon className="icon" />
+                            )}
+                            <ModeEditIcon className="icon" />
+                            <DeleteForeverIcon className="icon" />
+                        </div>
+                    </div>
+                ))}
+            </section>
         </div>
     );
 };

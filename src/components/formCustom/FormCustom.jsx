@@ -5,6 +5,7 @@ import Button from "../button/Button";
 import './formcustom.scss'
 
 import { ButtonOutLine } from './../button/Button';
+import handleFirebase from './../../firebase/index';
 
 const FormCustom = ({label,className,placeholder}) => {
 	const [content,setContent]=useState({
@@ -21,7 +22,7 @@ const FormCustom = ({label,className,placeholder}) => {
 		<div className="w-full grid grid-cols-2 gap-3 ">
 
 
-		<ButtonOutLine title="CANCEL" icon="" className="btn-add" />
+		<ButtonOutLine onClick={()=>document.querySelector('.form-custom').classList.remove('active')} title="CANCEL" icon="" className="btn-add" />
 		<Button title="ADD" icon="bx bx-plus" className="btn-add"/>
 		</div>
 	</div>;
